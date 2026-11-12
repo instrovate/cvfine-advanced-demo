@@ -1,5 +1,7 @@
 # Weekly Sales Anomaly Check
 
+**Live app:** https://akeskkklcjkkjmqyacpvhb.streamlit.app
+
 A small Streamlit app that tells a retail operations manager which stores need a call this week.
 Each store's latest weekly sales are compared with **its own** recent average (not with other stores),
 and any store that moves more than the chosen threshold (15% by default) is flagged **Investigate**.
@@ -14,7 +16,7 @@ someone else can use.
 3. Upload a CSV with columns `store, week, sales_inr` (one row per store per week), or use the included
    `sample_weekly_store_sales.csv`. Adjust the threshold and history sliders, then download the flagged stores.
 
-To publish it free: push this repo to GitHub and deploy it on Streamlit Community Cloud (no credit card).
+Published free on Streamlit Community Cloud from this repo (no credit card).
 
 ## How it works
 - `anomaly.py`: `flag_anomalies()` takes the latest week, averages each store's previous N weeks,
@@ -31,4 +33,4 @@ Built with help from Claude.ai, which suggested the store-relative comparison an
 - A number cannot tell a stock-out from a data error: call the store before acting.
 
 ## Feedback from a first user
-_To be added after the first person tries it._
+"This looks great: innovative, and a great learning experience." — Akriti Lal, after trying the live app
